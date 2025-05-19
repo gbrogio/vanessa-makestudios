@@ -3,3 +3,21 @@
   padding: 0;
   margin: 0;
 }
+
+.botao_whatsapp{
+  background-color: #25D366;
+  width: fit-content;
+  display: flex;
+  padding: 1rem;
+  border-radius: 100%;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border: solid black 2px;
+  text-decoration: none;
+}
+
+.botao_whatsapp img{
+  width: 3rem;
+  height: 3rem;
+}
