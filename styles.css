@@ -4,15 +4,6 @@
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-.alex-brush-regular {
-  font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-/*https://fonts.google.com/selection/embed*/
-
-
 body{
     margin: 0;
     background-color: #FFF9F5(192, 192, 192);
