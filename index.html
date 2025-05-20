@@ -26,6 +26,40 @@
 
       <!-- CONTATO -->
       <section>
+        <div class="container-contato">
+        <form>
+            <label for="nome">Seu Nome*:</label>
+            <div class="caixa-texto">
+                <!-- <span class="icone">👤</span> -->
+                <img src="pessoa.png" alt="pessoa" class="pessoa">
+                <input type="text" name="nome" id="nome" placeholder="Jhon Joe" required>
+            </div>
+
+            <label for="email">Seu E-mail*:</label>
+            <div class="caixa-texto">
+                <span class="icone">📧</span>
+                <input type="text" name="email" id="email" placeholder="jhonjoe@example.com" required>
+            </div>
+
+            <label for="nome">Telefone Para Contato (Opcional):</label>
+            <div class="caixa-texto">
+                <span class="icone">📞</span>
+                <input type="tel" name="telefone" id="telefone" placeholder="(44) 90000-0000" >
+            </div>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" class="mensagem" row="5" placeholder="Digite sua Mensagem..."></textarea>
+        </form>
+          <div class="termos-container">
+              <input type="checkbox" name="termos" class="termos" required>
+              <label for="termos">Aceito os Termos</label>
+          </div>
+
+        <button type="submit" class="botao-enviar">Enviar</button>
+
+        </div>
+        
+      </section>
         <!-- TITULO -->
         <div></div>
 
