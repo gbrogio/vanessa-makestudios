@@ -59,3 +59,86 @@ body{
 .direitos{
     margin-top: 15px;
 }
+
+/* -------------------- Contato -------------------- */
+
+.container-contato{
+    margin: 40px auto;
+    padding: 20px;
+}
+
+form{
+    
+}
+
+form label{
+    display: column;
+    margin: 0px;
+    color: #636363;
+    
+}
+
+.caixa-texto{
+    align-items: center;
+    border: 2px solid #8f8f8f;
+    background: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.caixa-texto .pessoa{
+    /* margin-right: 5px 10px; */
+    width: 20px;
+    height: 20px;
+}
+
+input[type="text"], textarea{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+input[type="email"], textarea{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+}
+input[type="tel"], textarea{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.mensagem{
+    border: 2px solid #8f8f8f;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin-top: 5px;
+}
+
+.termos{
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+/* .termos input{
+    margin: 10px;
+} */
+
+.botao-enviar{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.botao-enviar:hover{
+    background-color: #5e5e5e;
+}
