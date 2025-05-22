@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   line-height: 150%;
   background: #FFF9F5;
   overflow-x: hidden;
+
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
   padding-left: max(1rem, 4vw);
   padding-right: max(1rem, 4vw);
   box-sizing: border-box;
+
 }
 
 .tag-name h1 {
@@ -29,6 +32,7 @@ body {
   line-height: 75%;
   text-decoration: none;
   color: #1A1D26;
+
 }
 
 .tag-name h2 {
@@ -38,18 +42,21 @@ body {
   line-height: 75%;
   text-decoration: none;
   color: #1A1D26;
+
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
+
 }
 
 .logo {
   width: 54px;
   height: 54px;
   border-radius: 250px;
+
 }
 
 .navbar {
@@ -59,12 +66,14 @@ body {
   padding: 0.5rem max(1rem, 4vw);
   background-color: #fdf7f2;
   border-bottom: 1px solid #ccc;
+
 }
 
 .nav-items {
   display: flex;
   align-items: center;
   gap: 24px;
+
 }
 
 
@@ -84,7 +93,6 @@ nav ul li a {
   text-decoration: none;
   color: #1A1D26;
 
-
 }
 
 button {
@@ -95,12 +103,14 @@ button {
   color: white;
   font-weight: 500;
   cursor: pointer;
+
 }
 
 button:hover {
   background-color: #fff;
   color: #1A1D26;
   border: 1px solid #1A1D26;
+
 }
 
 
@@ -117,9 +127,6 @@ button:hover {
   width: 100%;
   max-width: 100%;
   height: auto;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 
 }
 
@@ -131,10 +138,7 @@ button:hover {
   height: auto;
   align-items: center;
   padding: 0px;
-  flex: none;
-  order: 0;
   align-self: stretch;
-  flex-grow: 1;
 
 }
 
@@ -147,10 +151,7 @@ button:hover {
   gap: 2rem;
   width: 656px;
   height: 900px;
-  flex: none;
-  order: 0;
   align-self: stretch;
-  flex-grow: 1;
 
 }
 
@@ -162,10 +163,7 @@ button:hover {
   gap: 24px;
   width: 576px;
   height: 259px;
-  flex: none;
-  order: 0;
   align-self: stretch;
-  flex-grow: 0;
 
 }
 
@@ -182,8 +180,8 @@ button:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  
 }
-
 
 .button-action-hero {
   display: flex;
@@ -193,9 +191,6 @@ button:hover {
   gap: 1rem;
   width: 199px;
   height: 48px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 
 }
 
@@ -210,9 +205,6 @@ button:hover {
   height: 48px;
   background: #1A1D26;
   border: 1px solid #BE986A;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 
 }
 
@@ -224,28 +216,20 @@ button:hover {
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  isolation: isolate;
   width: 656px;
   height: 900px;
-  flex: none;
-  order: 1;
-  flex-grow: 1;
 
 }
 
-.colum-image {
+.colum-image1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  position: absolute;
-  height: 2732px;
+  height: 332px;
   left: 51.33%;
   right: 0%;
   top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
+
 }
