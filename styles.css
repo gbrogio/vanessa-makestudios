@@ -41,7 +41,6 @@
 .contato{
   padding: 14px;
 }
-
 .titulos_contato{
   width: 768px;
   height: 139px;
@@ -54,7 +53,7 @@ h1{
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
-
+  margin: 10px;
 }
 h2{
   font-family: Alex Brush;
@@ -62,12 +61,14 @@ h2{
   font-size: 64px;
   line-height: 75%;
   letter-spacing: 0%;
-
+  margin: 10px;
 }
 .envio_de_email{
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  width: 1,312px fit-content;
+  height: 657px;
+  gap: 2px;
   margin: 10px;
   padding: 10px;
   background-color: #FFF9F5;
@@ -82,20 +83,26 @@ h2{
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
-
+  
 }
 .input{
-  width: 616;
-  height: 48;
+  align-items: center;
+  width: 616px;
+  height: 48px;
   gap: 12px;
-  border-width: 1px;
+  border: 1px solid black;
   padding-top: 8px;
-  padding-right: 12px;
   padding-bottom: 8px;
-  padding-left: 12px;
+  padding-right: 12px;
+  padding-left: 30px;
 
 }
 .text_area{
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
   width: 616;
   height: 180px;
   border: 1px;
