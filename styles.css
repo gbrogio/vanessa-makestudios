@@ -4,8 +4,8 @@
   margin: 0;
 }
 
-.botao_whatsapp{
-  background-color: #25D366;
+.botao_whatsapp {
+  background-color: #25d366;
   width: fit-content;
   display: flex;
   padding: 1rem;
@@ -16,8 +16,109 @@
   border: solid black 2px;
   text-decoration: none;
 }
-
-.botao_whatsapp img{
+.botao_whatsapp img {
   width: 3rem;
   height: 3rem;
+}
+
+#nome{
+  background-image: url("/img/user.svg");
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+#email{
+  background-image: url("/img/email.svg");
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+#telefone{
+  background-image: url("/img/phone.svg");
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+
+.contato{
+  padding: 14px;
+}
+
+.titulos_contato{
+  width: 768px;
+  height: 139px;
+  gap: 16px;
+
+}
+h1{
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+h2{
+  font-family: Alex Brush;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75%;
+  letter-spacing: 0%;
+
+}
+.envio_de_email{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 10px;
+  padding: 10px;
+  background-color: #FFF9F5;
+  border: 2px solid black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.label{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+.input{
+  width: 616;
+  height: 48;
+  gap: 12px;
+  border-width: 1px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+
+}
+.text_area{
+  width: 616;
+  height: 180px;
+  border: 1px;
+  padding: 12px;
+  border: 1px solid black;
+}
+.termos{
+  width: 135;
+height: 37;
+gap: 8px;
+padding-bottom: 16px;
+
+}
+.botao_enviar{
+  width:fit-content;
+  width: 92px;
+  height: 48px;
+  gap: 8px;
+  border: 1px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  color:  #FFF9F5;
+  background-color: black;
 }
