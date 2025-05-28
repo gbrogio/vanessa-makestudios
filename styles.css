@@ -113,6 +113,51 @@ button:hover {
 
 }
 
+/* 1) Esconder o toggle no desktop */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* ---- Mobile first ---- */
+@media (max-width: 768px) {
+
+  /* Mostrar toggle */
+  .navbar-toggle {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 100%;
+    background: #fdf7f2;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-items button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-items.open {
+    display: flex;
+  }
+}
+
 
 /*--------------------------------<HERO DAQUI PRA BAIXO>---------------------------------------*/
 
