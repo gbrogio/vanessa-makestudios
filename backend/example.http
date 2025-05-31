@@ -1,0 +1,21 @@
+### POST Request: TEXT
+POST http://localhost:3000/send-mail
+content-type: application/json
+
+{
+  "to": "guilhermebrogio.ps@gmail.com",
+  "from": "guilhermebrogio.ps@gmail.com",
+  "subject": "Teste",
+  "text": "Teste"
+}
+
+### POST Request: HTML
+POST http://localhost:3000/send-mail
+content-type: application/json
+
+{
+  "to": "guilhermebrogio.ps@gmail.com",
+  "from": "guilhermebrogio.ps@gmail.com",
+  "subject": "Teste",
+  "html": "<h1>Teste</h1>"
+}
