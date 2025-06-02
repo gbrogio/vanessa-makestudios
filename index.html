@@ -57,7 +57,7 @@
 
         <div class="container_contatos">
           <form class="envio_de_email">
-            <div class="nome_email">
+            <div class="nome_email campo_formulario">
               <label class="label" for="nome">Seu nome*:</label>
               <input
                 class="input"
@@ -66,10 +66,10 @@
                 name="nome"
                 placeholder="Jhon Doe"
                 required
-              /><br /><br />
+              />
             </div>
 
-            <div class="email_email">
+            <div class="email_email campo_formulario">
               <label class="label" for="email">Seu melhor E-mail*:</label>
               <input
                 class="input"
@@ -78,10 +78,10 @@
                 name="email"
                 placeholder="jhondoe@example.com"
                 required
-              /><br /><br />
+              />
             </div>
 
-            <div class="telefone_email">
+            <div class="telefone_email campo_formulario">
               <label class="label" for="telefone"
                 >Telefone Para Contato (Opcional):</label
               >
@@ -91,10 +91,10 @@
                 id="telefone"
                 name="telefone"
                 placeholder="(44) 90000-0000"
-              /><br /><br />
+              />
             </div>
 
-            <div class="mensagem_email">
+            <div class="mensagem_email campo_formulario">
               <label class="label_mensagem" for="mensagem">Mensagem:</label>
               <textarea
                 class="text_area"
@@ -103,8 +103,7 @@
                 rows="5"
                 placeholder="Digite sua mensagem..."
                 required
-              ></textarea
-              ><br /><br />
+              ></textarea>
             </div>
 
             <label class="termos">
@@ -118,23 +117,45 @@
           <div class="outros_meios_de_contato">
             <div class="informacoes">
               <div class="info">
-                <img src="/img/email.svg" />
-                <h4>Email</h4>
-                <p>Entre em contato conosco.</p>
-                <a href="lucasgslima13@gmail.com" target="_blank"
-                  >lucasgslima13@gmail.com</a
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
+                  <path
+                    d="M22.5 7.5L13.509 13.227C13.2039 13.4042 12.8573 13.4976 12.5045 13.4976C12.1517 13.4976 11.8051 13.4042 11.5 13.227L2.5 7.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.5 4.5H4.5C3.39543 4.5 2.5 5.39543 2.5 6.5V18.5C2.5 19.6046 3.39543 20.5 4.5 20.5H20.5C21.6046 20.5 22.5 19.6046 22.5 18.5V6.5C22.5 5.39543 21.6046 4.5 20.5 4.5Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <div class="info_child">
+                  <h4>Email</h4>
+                  <p>Entre em contato conosco.</p>
+                  <a href="lucasgslima13@gmail.com" target="_blank"
+                    >lucasgslima13@gmail.com</a
+                  >
+                </div>
               </div>
 
               <div class="info">
-                <img src="/img/phone.svg" />
                 <h4>Telefone</h4>
                 <p>Ligue para nós.</p>
                 <p>+55 (44) 9 9900-0000</p>
               </div>
 
               <div class="info">
-                <img src="/img/map.svg" />
                 <h4>Escritório</h4>
                 <p>123 Sample St, Sydney NSW 2000 AU</p>
               </div>
