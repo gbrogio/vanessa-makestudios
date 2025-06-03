@@ -1,8 +1,16 @@
+:root {
+  --color-primary: #c4a186; /* color border bottom */
+  --color-background: #f6f0e2; /* color background */
+  --color-header: #ffffff; /* color header */
+  --color-secondary: #1A1D26; /* color bottom fonts  */
+  --color-secondary-45: #1A1D2673; /* color boder linhas */
+  --color-secondary-60: #1A1D2699; /* color forms */
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 body {
@@ -10,19 +18,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  background: #FFF9F5;
+  background: var(--color-background);
   overflow-x: hidden;
-
 }
 
 .header {
   max-width: 100%;
   height: 72px;
-  border-bottom: 1px solid #1A1D2673;
+  border-bottom: 1px solid var(--color-secondary);
   padding-left: max(1rem, 4vw);
   padding-right: max(1rem, 4vw);
   box-sizing: border-box;
-
 }
 
 .tag-name h1 {
@@ -31,8 +37,7 @@ body {
   font-size: 32px;
   line-height: 75%;
   text-decoration: none;
-  color: #1A1D26;
-
+  color: var(--color-secondary);
 }
 
 .tag-name h2 {
@@ -41,22 +46,19 @@ body {
   font-size: 19px;
   line-height: 75%;
   text-decoration: none;
-  color: #1A1D26;
-
+  color: var(--color-secondary);
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
-
 }
 
 .logo {
   width: 54px;
   height: 54px;
   border-radius: 250px;
-
 }
 
 .navbar {
@@ -64,25 +66,21 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem max(1rem, 4vw);
-  background-color: #fdf7f2;
+  background-color: var(--color-header);
   border-bottom: 1px solid #ccc;
-
 }
 
 .nav-items {
   display: flex;
   align-items: center;
   gap: 24px;
-
 }
-
 
 nav ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 20px;
-
 }
 
 nav ul li a {
@@ -91,26 +89,24 @@ nav ul li a {
   font-size: 16px;
   line-height: 150%;
   text-decoration: none;
-  color: #1A1D26;
-
+  color: var(--color-secondary);
 }
 
 button {
   height: 40px;
   padding: 8px 20px;
-  border: 1px solid #1A1D26;
-  background-color: #1A1D26;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+;
   color: white;
   font-weight: 500;
   cursor: pointer;
-
 }
 
 button:hover {
-  background-color: #fff;
-  color: #1A1D26;
-  border: 1px solid #1A1D26;
-
+  background-color: var(--color-header);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
 
 /* 1) Esconder o toggle no desktop */
@@ -121,11 +117,8 @@ button:hover {
   cursor: pointer;
 }
 
-
-
 /* ---- Mobile first ---- */
 @media (max-width: 768px) {
-
   /* Mostrar toggle */
   .navbar-toggle {
     display: block;
@@ -137,7 +130,7 @@ button:hover {
     top: 72px;
     right: 0;
     width: 100%;
-    background: #fdf7f2;
+    background: var(--color-header);
     flex-direction: column;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -158,9 +151,7 @@ button:hover {
   }
 }
 
-
 /*--------------------------------<HERO DAQUI PRA BAIXO>---------------------------------------*/
-
 
 .hero {
   display: flex;
@@ -173,7 +164,6 @@ button:hover {
   justify-content: center;
   max-width: 1312px;
   margin: 0 auto;
-
 }
 
 .hero-container {
@@ -184,7 +174,6 @@ button:hover {
   align-items: center;
   padding: 0px;
   align-self: stretch;
-
 }
 
 .hero-colum {
@@ -194,7 +183,6 @@ button:hover {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-
 }
 
 .hero-text-content {
@@ -206,7 +194,6 @@ button:hover {
   width: 100%;
   align-self: stretch;
   max-width: 576px;
-
 }
 
 .hero-text-content h1 {
@@ -214,7 +201,6 @@ button:hover {
   font-weight: 400;
   font-size: 64px;
   line-height: 120%;
-
 }
 
 .hero-text-content p {
@@ -222,7 +208,6 @@ button:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-
 }
 
 .button-action-hero {
@@ -233,7 +218,6 @@ button:hover {
   gap: 1rem;
   width: 199px;
   height: 48px;
-
 }
 
 .button-hero {
@@ -245,9 +229,8 @@ button:hover {
   gap: 0.5rem;
   width: 199px;
   height: 48px;
-  background: #1A1D26;
-  border: 1px solid #BE986A;
-
+  background: var(--color-secondary);
+  border: 1px solid var(--color-primary);
 }
 
 .content-image {
@@ -260,12 +243,17 @@ button:hover {
 }
 
 .colum-image-container {
+  --flow: 1;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   gap: 1rem;
+}
+
+.colum-image-container.invert {
+  --flow: -1;
 }
 
 .content-image img {
@@ -311,14 +299,15 @@ button:hover {
   --initial-position: calc(100% + 1rem - 50%);
 }
 
-
 @keyframes carrousel {
   0% {
-    transform: translateY(var(--initial-position));
+    transform: translateY(calc(var(--initial-position) * var(--flow)));
   }
 
   100% {
-    transform: translateY(calc(var(--initial-position) + 100% + 1rem));
+    transform: translateY(
+      calc((var(--initial-position) + 100% + 1rem) * var(--flow))
+    );
   }
 }
 
@@ -328,10 +317,8 @@ button:hover {
   }
 }
 
-
 @media (max-width: 375px) {
   .content-image img {
     height: 160px;
   }
-
 }
