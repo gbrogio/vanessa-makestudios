@@ -41,15 +41,21 @@ body{
     margin: 0;
 }
 
+
+.navegacao-container{
+  display: flex;
+  gap: 20px;
+}
 .navegacao-container a{ /*validar se precisa do hover*/
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
 
 .social-container{
-    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 .social-container img{
     width: 20px;
@@ -58,6 +64,28 @@ body{
 
 .direitos{
     margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .navegacao-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .social-container {
+    margin-bottom: 15px;
+  }
 }
 
 /* -------------------- Contato -------------------- */
