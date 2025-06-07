@@ -33,7 +33,7 @@ app.get("/", async (req, res) => {
 
 const NUM_FORKS = Number(process.env.CLUSTER_WORKERS) || 1;
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT) || 8080;
 // const PORT = 3000;
 
 async function bootstrap() {
