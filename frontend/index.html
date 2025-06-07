@@ -1,42 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <!-- HERO -->
-      <section></section>
+<html lang="pt-BR">
 
-      <!-- COPY -->
-      <section></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Carregamento antecipado da fonte Alex Brush -->
+  <link rel="preload" href="./fonts/alex-brush.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Vanessa Make Studios</title>
+  <meta name="description"
+    content="Vanessa Make Studios - Transforme sua beleza com maquiagem personalizada. Descubra a arte da maquiagem que realça sua beleza única." />
+</head>
 
-      <!-- VIDEO -->
-      <section></section>
+<body>
+  <a class="botao_whatsapp" href="https://wa.me/+5544999007665" target="_blank" rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp">
+    <svg width="399" height="401" viewBox="0 0 399 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M340.832 57.4497C306.677 23.6781 261.453 3.41071 213.516 0.393047C165.579 -2.62462 118.17 11.8114 80.05 41.0333C41.93 70.2552 15.676 112.288 6.13901 159.363C-3.39699 206.439 4.42798 255.375 28.17 297.129L0 400.049L105.313 372.432C134.434 388.31 167.074 396.628 200.242 396.624C239.507 396.554 277.871 384.86 310.499 363.017C343.127 341.175 368.558 310.162 383.586 273.887C398.614 237.613 402.567 197.701 394.945 159.183C387.323 120.666 368.469 85.2672 340.758 57.4497H340.832ZM200.316 363.079C170.75 363.078 141.727 355.129 116.287 340.065L110.248 336.382L47.649 352.768L64.366 291.974L60.463 285.751C41.002 254.748 32.394 218.158 35.993 181.73C39.593 145.303 55.195 111.104 80.347 84.5096C105.5 57.9152 138.777 40.4331 174.948 34.8111C211.118 29.1891 248.131 35.7461 280.169 53.4514C312.208 71.1566 337.454 99.0063 351.94 132.623C366.426 166.239 369.331 203.716 360.197 239.164C351.064 274.611 330.41 306.018 301.483 328.448C272.556 350.878 236.995 363.06 200.39 363.079H200.316ZM290.716 239.428C285.782 236.924 261.258 224.92 256.802 223.263C252.347 221.606 248.959 220.796 245.755 225.767C242.552 230.738 232.941 241.895 230.032 245.209C227.123 248.523 224.251 248.891 219.28 246.461C204.677 240.671 191.185 232.399 179.401 222.011C168.555 211.966 159.249 200.377 151.784 187.618C148.912 182.647 151.489 179.959 153.956 177.492C156.423 175.025 158.927 171.711 161.321 168.802C163.359 166.294 165.021 163.503 166.255 160.517C166.919 159.15 167.23 157.638 167.159 156.12C167.088 154.602 166.638 153.126 165.85 151.826C164.635 149.323 154.803 124.909 150.569 115.004C146.334 105.098 142.431 106.645 139.522 106.498C136.613 106.35 133.336 106.498 130.021 106.498C127.508 106.565 125.035 107.152 122.76 108.224C120.484 109.295 118.456 110.826 116.802 112.721C111.205 117.97 106.755 124.321 103.732 131.375C100.709 138.428 99.179 146.031 99.238 153.704C99.238 178.155 117.023 201.574 119.49 205.035C121.957 208.497 154.509 258.502 204.183 280.007C213.415 283.997 222.855 287.488 232.462 290.464C242.59 293.533 253.294 294.201 263.725 292.416C273.262 290.98 293.183 280.412 297.234 268.812C301.284 257.213 301.358 247.271 300.143 245.209C298.928 243.147 295.834 241.895 290.716 239.428Z"
+        fill="white" />
+    </svg>
+  </a>
 
-      <!-- SOBRE MIM -->
-      <section></section>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img class="logo" src="./imgs/logo.webp" alt="Uma logo, escrita vanessa Make Studios, nas cores douradas" />
+        <div class="tag-name">
+          <h1>Vanessa</h1>
+          <h2>Make Studios</h2>
+        </div>
+      </div>
 
-      <!-- SERVIÇOS -->
-      <section></section>
+      <button class="navbar-toggle btn" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="currentColor" />
+        </svg>
+      </button>
 
-      <!-- CONTATO -->
+      <div class="nav-items">
+        <nav>
+          <a href="#hero">Início</a>
+          <a href="#sobre-mim">Sobre mim</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a href="#contato" class="btn">Agendar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero">
+        <div class="hero-container">
+          <div class="hero-column">
+            <div class="hero-text-content">
+              <h1 class="hero-title">
+                Transforme sua beleza com Vanessa Make Studios
+              </h1>
+              <p>
+                Descubra a arte da maquiagem personalizada que realça sua
+                beleza única. Com um toque de sofisticação, cada sessão é
+                projetada para empoderar e encantar.
+              </p>
+              <div class="button-action-hero">
+                <a href="https://wa.me/5545999362367?text=Olá%20Vanessa,%20gostaria%20de%20agendar%20uma%20sessão%20de%20maquiagem."
+                  target="_blank" class="btn">Agende Seus Sonhos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-image">
+          <div class="column-image-container">
+            <div class="column-image item1">
+              <img src="./imgs/img-1.webp" alt="Mulher de cabelos escuros usando maquiagem natural para o dia a dia."
+                width="300" height="400" loading="eager" />
+              <img src="./imgs/img-2.webp" alt="Mulher de cabelos grisalhos usando maquiagem sutil e discreta."
+                width="300" height="400" loading="eager" />
+              <img src="./imgs/img-3.webp"
+                alt="Mulher de cabelos cacheados usando maquiagem glamourosa com delineador e cílios." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-8.webp" alt="Mulher sorrindo levemente com maquiagem suave e olhar acolhedor."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-9.webp" alt="Mulher sorrindo com alegria contagiante e lábios vibrantes em destaque."
+                width="300" height="400" loading="lazy" />
+            </div>
+            <div class="column-image item2">
+              <img src="./imgs/img-1.webp" alt="Mulher de cabelos escuros usando maquiagem natural para o dia a dia."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-2.webp" alt="Mulher de cabelos grisalhos usando maquiagem sutil e discreta."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-3.webp"
+                alt="Mulher de cabelos cacheados usando maquiagem glamourosa com delineador e cílios." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-8.webp" alt="Mulher sorrindo levemente com maquiagem suave e olhar acolhedor."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-9.webp" alt="Mulher sorrindo com alegria contagiante e lábios vibrantes em destaque."
+                width="300" height="400" loading="lazy" />
+            </div>
+            <div class="column-image item3">
+              <img src="./imgs/img-1.webp" alt="Mulher de cabelos escuros usando maquiagem natural para o dia a dia."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-2.webp" alt="Mulher de cabelos grisalhos usando maquiagem sutil e discreta."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-3.webp"
+                alt="Mulher de cabelos cacheados usando maquiagem glamourosa com delineador e cílios." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-8.webp" alt="Mulher sorrindo levemente com maquiagem suave e olhar acolhedor."
+                width="300" height="400" loading="lazy" />
+              <img src="./imgs/img-9.webp" alt="Mulher sorrindo com alegria contagiante e lábios vibrantes em destaque."
+                width="300" height="400" loading="lazy" />
+            </div>
+          </div>
+          <div class="column-image-container invert">
+            <div class="column-image delay item1">
+              <img src="./imgs/img-4.webp"
+                alt="Mulher loira usando maquiagem ousada com batom vermelho e olhos marcados." />
+              <img src="./imgs/img-5.webp" alt="Mulher de perfil usando maquiagem com sombra rosa brilhante." />
+              <img src="./imgs/img-6.webp"
+                alt="Mulher de franja usando maquiagem natural com olhos verdes em destaque." />
+              <img src="./imgs/img-10.webp"
+                alt="Sorriso radiante de uma mulher de alma leve, com toque natural e brilho sutil na pele." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-11.webp" alt="Mulher sorrindo de lado com expressão confiante e beleza autêntica."
+                width="300" height="400" loading="lazy" />
+            </div>
+            <div class="column-image delay item2">
+              <img src="./imgs/img-4.webp"
+                alt="Mulher loira usando maquiagem ousada com batom vermelho e olhos marcados." />
+              <img src="./imgs/img-5.webp" alt="Mulher de perfil usando maquiagem com sombra rosa brilhante." />
+              <img src="./imgs/img-6.webp"
+                alt="Mulher de franja usando maquiagem natural com olhos verdes em destaque." />
+              <img src="./imgs/img-10.webp"
+                alt="Sorriso radiante de uma mulher de alma leve, com toque natural e brilho sutil na pele." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-11.webp" alt="Mulher sorrindo de lado com expressão confiante e beleza autêntica."
+                width="300" height="400" loading="lazy" />
+            </div>
+            <div class="column-image delay item3">
+              <img src="./imgs/img-4.webp"
+                alt="Mulher loira usando maquiagem ousada com batom vermelho e olhos marcados." />
+              <img src="./imgs/img-5.webp" alt="Mulher de perfil usando maquiagem com sombra rosa brilhante." />
+              <img src="./imgs/img-6.webp"
+                alt="Mulher de franja usando maquiagem natural com olhos verdes em destaque." />
+              <img src="./imgs/img-10.webp"
+                alt="Sorriso radiante de uma mulher de alma leve, com toque natural e brilho sutil na pele." width="300"
+                height="400" loading="lazy" />
+              <img src="./imgs/img-11.webp" alt="Mulher sorrindo de lado com expressão confiante e beleza autêntica."
+                width="300" height="400" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre-mim" class="layout-sobre-mim">
+      <div class="container-sobre-mim">
+        <div class="content-sobre-mim">
+          <div class="section-title-sobre-mim">
+            <div class="content-text-sobre-mim">
+              <h2>Sobre mim!</h2>
+              <p>
+                Olá! Meu nome é Vanessa, tenho 25 anos, sou casada e mãe de
+                uma princesinha. Desde muito jovem, sempre fui vaidosa e
+                apaixonada por maquiagem, mas fazer um curso na área parecia
+                um sonho distante. Com o tempo, as responsabilidades da vida
+                adulta foram ocupando espaço e aquele desejo ficou em segundo
+                plano. Alguns anos se passaram até que decidi olhar com mais
+                carinho para os meus sonhos e dar uma chance a mim mesma. Me
+                inscrevi em um curso de maquiagem e, a partir dali, me
+                encontrei. Tive a certeza de que estava no caminho certo,
+                fazendo o que realmente amo! Hoje, como profissional da
+                beleza, a minha missão é ajudar outras mulheres a resgatarem
+                sua autoestima, redescobrirem seu brilho e enxergarem o quanto
+                são maravilhosas.
+              </p>
+            </div>
+          </div>
+          <div class="action-sobre-mim">
+            <a href="#contato" class="btn-outline">Me Mande Uma Mensagem</a>
+          </div>
+        </div>
+        <img src="./imgs/img-1.webp" alt="Mulher de cabelos escuros usando maquiagem natural para o dia a dia." />
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="layout-servicos">
+      <div class="title-servicos">
+        <span class="tag">Maquiagens</span>
+        <h2>Serviços</h2>
+        <p>
+          Transforme momentos em memórias inesquecíveis com a maquiagem
+          perfeita para cada ocasião.
+        </p>
+      </div>
+      <div class="container-servicos">
+        <div class="card card1">
+          <div class="card-text">
+            <span class="tag">Maquiagem</span>
+            <h3>Social</h3>
+            <p>
+              Também conhecida como maquiagem para eventos, é ideal para
+              ocasiões especiais como festas, casamentos e jantares. Seu
+              principal objetivo é realçar a beleza natural, corrigindo
+              pequenas imperfeições e destacando os pontos fortes do rosto de
+              forma leve e elegante — para que você se sinta confiante e
+              confortável em qualquer momento
+            </p>
+            <a href="https://wa.me/5545999362367?text=Gostaria%20de%20saber%20mais%20sobre%20a%20maquiagem%20social."
+              class="btn" target="_blank">Saiba Mais
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.207 17.4496L15.914 11.7426L10.207 6.03564L8.79303 7.44964L13.086 11.7426L8.79303 16.0356L10.207 17.4496Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-image">
+            <img src="./imgs/img-2.webp" alt="Mulher de cabelos grisalhos usando maquiagem sutil e discreta." />
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="card-text">
+            <span class="tag">Maquiagem</span>
+            <h3>Colorida</h3>
+            <p>
+              é caracterizada pelo uso de tons vibrantes e alegres, aplicados
+              em diferentes áreas do rosto — como olhos, bochechas e lábios.
+              Seu objetivo é criar um visual marcante, criativo e cheio de
+              personalidade, ideal para ocasiões festivas ou para quem gosta
+              de ousar no estilo.
+            </p>
+            <a href="https://wa.me/5545999362367?text=Gostaria%20de%20saber%20mais%20sobre%20a%20maquiagem%20colorida."
+              class="btn" target="_blank">Saiba Mais
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.207 17.4496L15.914 11.7426L10.207 6.03564L8.79303 7.44964L13.086 11.7426L8.79303 16.0356L10.207 17.4496Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-image">
+            <img src="./imgs/img-7.webp" alt="Mulher usando maquiagem artística e colorida nos olhos com glitter." />
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="card-text">
+            <span class="tag">Maquiagem</span>
+            <h3>Noturna</h3>
+            <p>
+              Utiliza técnicas mais elaboradas e cores intensas, com o
+              objetivo de valorizar os pontos fortes do rosto e criar um
+              visual impactante. É ideal para festas, jantares, baladas e
+              outros eventos noturnos onde a produção pede um toque extra de
+              glamour
+            </p>
+            <a href="https://wa.me/5545999362367?text=Gostaria%20de%20saber%20mais%20sobre%20a%20maquiagem%20noturna."
+              class="btn" target="_blank">Saiba Mais
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.207 17.4496L15.914 11.7426L10.207 6.03564L8.79303 7.44964L13.086 11.7426L8.79303 16.0356L10.207 17.4496Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-image">
+            <img src="./imgs/img-4.webp"
+              alt="Mulher loira usando maquiagem ousada com batom vermelho e olhos marcados." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+      <!-- TITULO -->
+      <div class="titulos_contato">
+        <span class="tag">Contato</span>
+        <h3>Entre em contato</h3>
+        <p>Preencha o formulário abaixo para nos contatar.</p>
+      </div>
+
+      <div class="container_contatos">
+        <form id="contact-form" class="envio_de_email">
+          <div class="form-field">
+            <label for="name" class="form-label">Seu nome*:</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Jhon Doe" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="form-label">Seu Melhor E-mail*:</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jhondoe@example.com"
+                required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="phone" class="form-label">Telefone Para Contato (Opcional):</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(44) 90000-0000" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message" class="form-label">Mensagem:</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Digite sua mensagem..." rows="6">
+Olá, gostaria de saber mais sobre os serviços oferecidos.</textarea>
+          </div>
+
+          <!-- <div class="checkbox-field">
+              <label class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  class="checkbox-input"
+                  required
+                />
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Aceito os Termos</span>
+              </label>
+            </div> -->
+
+          <button id="submit-button" class="btn" type="submit">Enviar</button>
+        </form>
+
+        <div class="outros_meios_de_contato">
+          <div class="informacoes">
+            <div class="info">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.5 7.5L13.509 13.227C13.2039 13.4042 12.8573 13.4976 12.5045 13.4976C12.1517 13.4976 11.8051 13.4042 11.5 13.227L2.5 7.5"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20.5 4.5H4.5C3.39543 4.5 2.5 5.39543 2.5 6.5V18.5C2.5 19.6046 3.39543 20.5 4.5 20.5H20.5C21.6046 20.5 22.5 19.6046 22.5 18.5V6.5C22.5 5.39543 21.6046 4.5 20.5 4.5Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <div class="info_child">
+                <h4>Email</h4>
+                <p>Entre em contato conosco.</p>
+                <a href="mailto:vanessagmakestudio@gmail.com" target="_blank"
+                  class="link">vanessagmakestudio@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.1095 16.8905C23.9857 16.7666 23.8388 16.6683 23.677 16.6012C23.5153 16.5341 23.3419 16.4996 23.1668 16.4996C22.9917 16.4996 22.8183 16.5341 22.6565 16.6012C22.4948 16.6683 22.3478 16.7666 22.2241 16.8905L20.0988 19.0159C19.1135 18.7225 17.2748 18.0559 16.1095 16.8905C14.9441 15.7252 14.2775 13.8865 13.9841 12.9012L16.1095 10.7759C16.2334 10.6521 16.3317 10.5052 16.3988 10.3435C16.4659 10.1817 16.5004 10.0083 16.5004 9.83319C16.5004 9.65808 16.4659 9.48469 16.3988 9.32294C16.3317 9.16118 16.2334 9.01425 16.1095 8.89053L10.7761 3.55719C10.6524 3.43327 10.5055 3.33495 10.3437 3.26787C10.182 3.20079 10.0086 3.16626 9.83345 3.16626C9.65834 3.16626 9.48495 3.20079 9.32319 3.26787C9.16144 3.33495 9.0145 3.43327 8.89079 3.55719L5.27479 7.17319C4.76812 7.67986 4.48279 8.37586 4.49345 9.08653C4.52412 10.9852 5.02679 17.5799 10.2241 22.7772C15.4215 27.9745 22.0161 28.4759 23.9161 28.5079H23.9535C24.6575 28.5079 25.3228 28.2305 25.8268 27.7265L29.4428 24.1105C29.5667 23.9868 29.665 23.8399 29.7321 23.6781C29.7992 23.5164 29.8337 23.343 29.8337 23.1679C29.8337 22.9927 29.7992 22.8194 29.7321 22.6576C29.665 22.4958 29.5667 22.3489 29.4428 22.2252L24.1095 16.8905ZM23.9401 25.8399C22.2761 25.8119 16.5828 25.3652 12.1095 20.8905C7.62145 16.4025 7.18679 10.6892 7.16012 9.05853L9.83345 6.38519L13.2815 9.83319L11.5575 11.5572C11.4007 11.7138 11.2855 11.907 11.2222 12.1193C11.1589 12.3316 11.1495 12.5563 11.1948 12.7732C11.2268 12.9265 12.0095 16.5625 14.2228 18.7759C16.4361 20.9892 20.0721 21.7719 20.2255 21.8039C20.4422 21.8505 20.6671 21.8418 20.8796 21.7787C21.0921 21.7155 21.2853 21.5999 21.4415 21.4425L23.1668 19.7185L26.6148 23.1665L23.9401 25.8399Z"
+                  fill="currentColor" />
+              </svg>
+
+              <div class="info_child">
+                <h4>Telefone</h4>
+                <p>Ligue para nós.</p>
+                <a href="tel:+5545999362367" target="_blank" class="link">(45) 99936-2367</a>
+              </div>
+            </div>
+
+            <div class="info">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.5001 19.1667C19.4415 19.1667 21.8335 16.7747 21.8335 13.8334C21.8335 10.8921 19.4415 8.50008 16.5001 8.50008C13.5588 8.50008 11.1668 10.8921 11.1668 13.8334C11.1668 16.7747 13.5588 19.1667 16.5001 19.1667ZM16.5001 11.1667C17.9708 11.1667 19.1668 12.3627 19.1668 13.8334C19.1668 15.3041 17.9708 16.5001 16.5001 16.5001C15.0295 16.5001 13.8335 15.3041 13.8335 13.8334C13.8335 12.3627 15.0295 11.1667 16.5001 11.1667Z"
+                  fill="currentColor" />
+                <path
+                  d="M15.7268 29.5854C15.9525 29.7466 16.2229 29.8332 16.5002 29.8332C16.7775 29.8332 17.0478 29.7466 17.2735 29.5854C17.6788 29.2987 27.2055 22.4201 27.1668 13.8334C27.1668 7.95208 22.3815 3.16675 16.5002 3.16675C10.6188 3.16675 5.83349 7.95208 5.83349 13.8267C5.79482 22.4201 15.3215 29.2987 15.7268 29.5854ZM16.5002 5.83341C20.9122 5.83341 24.5002 9.42142 24.5002 13.8401C24.5282 19.7574 18.6495 25.0707 16.5002 26.8134C14.3522 25.0694 8.47216 19.7547 8.50016 13.8334C8.50016 9.42141 12.0882 5.83341 16.5002 5.83341Z"
+                  fill="currentColor" />
+              </svg>
+
+              <div class="info_child">
+                <h4>Salão</h4>
+                <address>
+                  Rua Werner Zielasko,<br />2261 Coopagro<br />Toledo - PR
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7114044745667!2d-53.77536502379825!3d-24.702445604504852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f39678fd3bdf77%3A0x6d2dcf0b312c71ba!2sR.%20Werner%20Zielasko%2C%202261%20-%20Coopagro%2C%20Toledo%20-%20PR%2C%2085903-752!5e0!3m2!1spt-BR!2sbr!4v1749320516933!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa localização do salão da Vanessa Make Studios"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <hr class="divisor-footer" />
+  <footer class="princ-footer">
+    <div class="container">
       <section>
-        <!-- TITULO -->
-        <div></div>
+        <div class="logo-container">
+          <img class="logo" src="./imgs/logo.webp" alt="Uma logo, escrita vanessa Make Studios, nas cores douradas" />
+          <div class="tag-name">
+            <h1>Vanessa</h1>
+            <h2>Make Studios</h2>
+          </div>
+        </div>
 
-        <div>
-          <form></form>
+        <nav class="navegacao-container">
+          <a href="#hero">Início</a>
+          <a href="#sobre-mim">Sobre Mim</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
 
-          <!-- OUTROS MEIOS DE CONTATO -->
-          <div></div>
+        <div class="social-container">
+          <a href="https://www.facebook.com/share/19W1rHYg5F/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook" class="social-link">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.5 12.8038C22.5 7.24719 18.0229 2.74268 12.5 2.74268C6.97715 2.74268 2.5 7.24719 2.5 12.8038C2.5 17.8255 6.15684 21.9879 10.9375 22.7427V15.7121H8.39844V12.8038H10.9375V10.5872C10.9375 8.06564 12.4305 6.6728 14.7146 6.6728C15.8088 6.6728 16.9531 6.86931 16.9531 6.86931V9.34529H15.6922C14.45 9.34529 14.0625 10.1209 14.0625 10.9166V12.8038H16.8359L16.3926 15.7121H14.0625V22.7427C18.8432 21.9879 22.5 17.8257 22.5 12.8038Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/vanessag.makestudio?igsh=cXpxc2QyMW9jZXNm" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.5 3.74268H8.5C5.73858 3.74268 3.5 5.98126 3.5 8.74268V16.7427C3.5 19.5041 5.73858 21.7427 8.5 21.7427H16.5C19.2614 21.7427 21.5 19.5041 21.5 16.7427V8.74268C21.5 5.98126 19.2614 3.74268 16.5 3.74268ZM19.75 16.7427C19.7445 18.5353 18.2926 19.9872 16.5 19.9927H8.5C6.70735 19.9872 5.25549 18.5353 5.25 16.7427V8.74268C5.25549 6.95003 6.70735 5.49817 8.5 5.49268H16.5C18.2926 5.49817 19.7445 6.95003 19.75 8.74268V16.7427ZM17.25 8.99268C17.8023 8.99268 18.25 8.54496 18.25 7.99268C18.25 7.4404 17.8023 6.99268 17.25 6.99268C16.6977 6.99268 16.25 7.4404 16.25 7.99268C16.25 8.54496 16.6977 8.99268 17.25 8.99268ZM12.5 8.24268C10.0147 8.24268 8 10.2574 8 12.7427C8 15.228 10.0147 17.2427 12.5 17.2427C14.9853 17.2427 17 15.228 17 12.7427C17.0027 11.5484 16.5294 10.4022 15.6849 9.55776C14.8404 8.71327 13.6943 8.24002 12.5 8.24268ZM9.75 12.7427C9.75 14.2615 10.9812 15.4927 12.5 15.4927C14.0188 15.4927 15.25 14.2615 15.25 12.7427C15.25 11.2239 14.0188 9.99268 12.5 9.99268C10.9812 9.99268 9.75 11.2239 9.75 12.7427Z"
+                fill="currentColor" />
+            </svg>
+          </a>
         </div>
       </section>
-    </main>
-    <footer></footer>
-  </body>
+      <hr />
+      <p class="direitos">
+        © 2025 Vanessa Makestudio. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>

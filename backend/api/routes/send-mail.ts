@@ -1,6 +1,6 @@
-import { router } from ".";
 import nodemailer from "nodemailer";
 import { z } from "zod";
+import { router } from ".";
 
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
@@ -17,7 +17,7 @@ const emailSchema = z
 	.email({ message: "invalid-email" });
 
 const mailSchema = z.object({
-	to: emailSchema.or(z.array(emailSchema)),
+	// to: emailSchema.or(z.array(emailSchema)),
 	from: emailSchema,
 	subject: z
 		.string({ message: "invalid-type" })
@@ -30,7 +30,7 @@ const mailSchema = z.object({
 router.post("/send-mail", async (req, res) => {
 	try {
 		const data = mailSchema.parse(req.body);
-		await transporter.sendMail({ ...data, replyTo: data.from });
+		await transporter.sendMail({ ...data, replyTo: data.from, to: ["antonioneetoo19@gmail.com"] });
 		res.send({ message: "mail-sent" });
 	} catch (e) {
 		if (!(e instanceof z.ZodError)) {

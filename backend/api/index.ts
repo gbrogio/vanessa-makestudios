@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
 	methods: ["GET", "POST"],
-	origin: ['https://vanessamakestudio.vercel.app', 'http://localhost:4200'],
+	origin: ['https://vanessamakestudio.vercel.app', 'http://localhost:5500'],
 }));
 
 const limiter = rateLimit({
