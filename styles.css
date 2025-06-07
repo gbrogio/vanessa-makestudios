@@ -4,69 +4,72 @@
   margin: 0;
 }
 
-body{
-    margin: 0;
-    background-color: #FFF9F5(192, 192, 192);
-    font-family: 'Times New Roman', Times, serif;
+body {
+  margin: 0;
+  background-color: #FFF9F5; /* Corrigido: a cor estava mal formatada */
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.princ-footer{
-    padding: 20px 40px;
-    text-align: center;
-    color: #333
+.princ-footer {
+  padding: 1.25rem 2.5rem; /* 20px 40px */
+  text-align: center;
+  color: #333;
 }
 
-.container{
-    display: flex; /*  alinhamento Horizontal */
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Força quebra de linha se tiver conteudo em excesso*/
-}
-
-.logo-container{
-    display: flex;
-    align-items: center;
-}
-.logo-img{
-    border-radius: 50%;
-    width: 60px;
-    margin-right: 10px; /*distanciamento do texto*/ /*ajuda a arrumar o meio*/
-}
-.logo-texto h2{
-    font-family: Alex Brush;
-    margin: 0;
-}
-.logo-texto h4{
-    font-family: Alex Brush;
-    margin: 0;
-}
-
-
-.navegacao-container{
+.container {
   display: flex;
-  gap: 20px;
-}
-.navegacao-container a{ /*validar se precisa do hover*/
-    /* margin: 10px 20px; */
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.social-container{
-    display: flex;
-    gap: 15px;
-}
-.social-container img{
-    width: 20px;
-    height: 20px;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-.direitos{
-    margin-top: 15px;
+.logo-img {
+  border-radius: 50%;
+  width: 3.75rem; /* 60px */
+  margin-right: 0.63rem; /* 10px */
 }
 
-@media (max-width: 768px) {
+.logo-texto h2 {
+  font-family: Alex Brush;
+  margin: 0;
+}
+
+.logo-texto h4 {
+  font-family: Alex Brush;
+  margin: 0;
+}
+
+.navegacao-container {
+  display: flex;
+  gap: 1.25rem; /* 20px */
+}
+
+.navegacao-container a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-container {
+  display: flex;
+  gap: 0.95rem; /* 15px */
+}
+
+.social-container img {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem;
+}
+
+.direitos {
+  margin-top: 0.9375rem; /* 15px */
+}
+
+@media (max-width: 48rem) { /* 768px */
   .container {
     flex-direction: column;
     align-items: center;
@@ -74,99 +77,74 @@ body{
   }
 
   .logo-container {
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem; /* 15px */
   }
 
   .navegacao-container {
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 0.625rem; /* 10px */
+    margin-bottom: 0.95rem; /* 15px */
   }
 
   .social-container {
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem; /* 15px */
   }
 }
 
 /* -------------------- Contato -------------------- */
 
-.container-contato{
-    margin: 40px auto;
-    padding: 20px;
+.container-contato {
+  margin: 2.5rem auto; /* 40px */
+  padding: 1.25rem; /* 20px */
 }
 
-form{
-    
+form label {
+  display: column;
+  margin: 0;
+  color: #636363;
 }
 
-form label{
-    display: column;
-    margin: 0px;
-    color: #636363;
-    
+.caixa-texto {
+  align-items: center;
+  border: 0.12rem solid #8f8f8f; /* 2px */
+  background: white;
+  padding: 0.3rem; /* 5px */
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
 }
 
-.caixa-texto{
-    align-items: center;
-    border: 2px solid #8f8f8f;
-    background: white;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.caixa-texto .pessoa{
-    /* margin-right: 5px 10px; */
-    width: 20px;
-    height: 20px;
+.caixa-texto .pessoa {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem;
 }
 
-input[type="text"], textarea{
-    border: none;
-    outline: none;
-    font-size: 14px;
-    background-color: transparent;
-    margin-bottom: 5px;
-}
-input[type="email"], textarea{
-    border: none;
-    outline: none;
-    font-size: 14px;
-    background-color: transparent;
-}
-input[type="tel"], textarea{
-    border: none;
-    outline: none;
-    font-size: 14px;
-    background-color: transparent;
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  border: none;
+  outline: none;
+  font-size: 0.875rem; /* 14px */
+  background-color: transparent;
+  margin-bottom: 0.3rem; /* 5px */
 }
 
-.mensagem{
-    border: 2px solid #8f8f8f;
-    padding: 10px;
-    width: 100%;
-    resize: none;
-    margin-top: 5px;
+.mensagem {
+  border: 0.125rem solid #8f8f8f; /* 2px */
+  padding: 0.625rem; /* 10px */
+  width: 100%;
+  resize: none;
+  margin-top: 0.3rem; /* 5px */
 }
 
-.termos{
-    margin: 0px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    
+.termos {
+  margin: 0;
+  margin-top: 1.25rem; /* 20px */
+  margin-bottom: 3.12rem; /* 50px */
 }
-/* .termos input{
-    margin: 10px;
-} */
 
-.botao-enviar{
-    background-color: rgb(29, 29, 29);
-    color: white;
-    border: none;
-    padding: 20px 40px;
-    cursor: pointer;
-    font-size: 14px;
-}
-.botao-enviar:hover{
-    background-color: #5e5e5e;
+.botao-enviar {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  padding: 1.25rem 2.5rem; /* 20px 40px */
+  cursor: pointer;
+  font-size: 0.875rem; /* 14px */
 }
