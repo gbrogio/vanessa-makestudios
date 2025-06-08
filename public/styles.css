@@ -44,6 +44,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   background: var(--color-background);
+  color: var(--color-secondary);
   overflow-x: hidden;
 }
 
@@ -178,7 +179,17 @@ header > div {
   justify-content: space-between;
 }
 
-.tag-name h1 {
+.tag-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.tag-name .brand-name {
+  font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-size: 32px;
   line-height: 75%;
@@ -186,7 +197,8 @@ header > div {
   color: var(--color-secondary);
 }
 
-.tag-name h2 {
+.tag-name .brand-subtitle {
+  font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-size: 19px;
   line-height: 75%;

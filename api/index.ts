@@ -11,18 +11,33 @@ import "./routes/send-mail";
 
 const app = express();
 
-app.use(helmet());
+// Replace multiple helmet calls with a single, properly configured one
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        imgSrc: ["'self'", "data:"],
+        connectSrc: ["'self'"],
+        fontSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        mediaSrc: ["'self'"],
+        frameSrc: ["https://www.google.com", "https://maps.google.com"],
+      },
+    },
+    hsts: {
+      maxAge: 63072000,
+      includeSubDomains: true,
+      preload: true,
+    },
+  })
+);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(compression());
-app.use(helmet({ hsts: false }));
-app.use(
-  helmet.hsts({
-    maxAge: 63072000,
-    includeSubDomains: true,
-    preload: true,
-  })
-);
 app.enable("trust proxy");
 
 app.use((req, res, next) => {
