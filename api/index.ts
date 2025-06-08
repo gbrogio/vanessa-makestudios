@@ -72,6 +72,11 @@ app.get("/", (_req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+// Catch-all route for handling 404 (Not Found) - redirect to homepage
+app.use((_req, res) => {
+  res.redirect('/');
+});
+
 const PORT = Number(process.env.PORT) || 8080;
 // const PORT = 3000;
 
