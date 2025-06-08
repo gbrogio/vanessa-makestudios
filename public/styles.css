@@ -52,18 +52,28 @@ img {
   -webkit-user-drag: none;
 }
 
-h1,
-section h1,
-article h1,
-aside h1,
-nav h1 {
+h1 {
   font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-size: 4rem;
   line-height: 120%;
-  text-rendering: optimizeLegibility; /* Optimize text rendering */
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+section h1,
+section * h1,
+article h1,
+article * h1,
+aside h1,
+aside * h1,
+nav h1,
+nav * h1 {
+  font-size: 4rem;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 h2,
