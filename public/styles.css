@@ -165,6 +165,12 @@ a {
   border-radius: 4px;
 }
 
+.title {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
 /*--------------------------------<HEADER>---------------------------------------*/
 
 header {
