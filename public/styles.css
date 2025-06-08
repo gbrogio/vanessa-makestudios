@@ -57,11 +57,15 @@ h1,
 h3 {
   font-family: "Alex Brush", cursive;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 120%;
   text-rendering: optimizeLegibility; /* Optimize text rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:where(h1) {
+  font-size: 4rem;
 }
 
 h4 {
@@ -327,10 +331,6 @@ nav a:hover {
   max-width: 1312px;
   width: 100%;
   margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 64px;
 }
 
 .hero-container {
