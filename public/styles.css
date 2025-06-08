@@ -35,13 +35,13 @@ section {
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 150%;
   background: var(--color-background);
   color: var(--color-secondary);
@@ -58,7 +58,11 @@ img {
   font-size: 4em;
 }
 
-h1 {
+h1,
+section h1,
+article h1,
+aside h1,
+nav h1 {
   font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-size: 4rem;
