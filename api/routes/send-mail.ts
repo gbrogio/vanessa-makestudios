@@ -30,7 +30,7 @@ const mailSchema = z.object({
 router.post("/send-mail", async (req, res) => {
 	try {
 		const data = mailSchema.parse(req.body);
-		await transporter.sendMail({ ...data, replyTo: data.from, to: ["antonioneetoo19@gmail.com"] });
+		await transporter.sendMail({ ...data, replyTo: data.from, to: ["guilhermebrogio.ps@gmail.com"] });
 		res.send({ message: "mail-sent" });
 	} catch (e) {
 		if (!(e instanceof z.ZodError)) {
