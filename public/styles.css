@@ -53,6 +53,11 @@ img {
   -webkit-user-drag: none;
 }
 
+:where(h1) {
+  margin-block: 0em;
+  font-size: 4em;
+}
+
 h2,
 h1,
 h3 {
@@ -63,10 +68,6 @@ h3 {
   text-rendering: optimizeLegibility; /* Optimize text rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-:where(h1) {
-  font-size: 4rem;
 }
 
 h4 {
