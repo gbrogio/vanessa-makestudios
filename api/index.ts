@@ -24,7 +24,7 @@ const limiter = rateLimit({
 	max: 5, // Limite de 5 requisições por IP
 	validate: false,
 });
-app.use(limiter);
+app.use('/send-mail', limiter);
 
 app.use("/", router)
 
