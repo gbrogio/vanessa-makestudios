@@ -329,6 +329,10 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.hero-title {
+  font-size: 64px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
