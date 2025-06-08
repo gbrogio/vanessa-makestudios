@@ -58,12 +58,21 @@ img {
   font-size: 4em;
 }
 
-h2,
-h1,
-h3 {
+h1 {
   font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-size: 4rem;
+  line-height: 120%;
+  text-rendering: optimizeLegibility; /* Optimize text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h3 {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-size: 3.5rem;
   line-height: 120%;
   text-rendering: optimizeLegibility; /* Optimize text rendering */
   -webkit-font-smoothing: antialiased;
