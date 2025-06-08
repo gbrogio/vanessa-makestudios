@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://vanessamakestudios.com.br/sitemap.xml
+Sitemap: https://vanessamakestudio.com.br/sitemap.xml
