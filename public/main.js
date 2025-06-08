@@ -60,7 +60,7 @@ form.addEventListener("submit", async (e) => {
   submitButton.classList.add("loading");
   submitButton.textContent = "Enviando...";
 
-  await fetch("https://api-vanessamakestuidio.vercel.app/send-mail", {
+  await fetch("/send-mail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
