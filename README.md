@@ -1,116 +1,105 @@
-# Mail Sender
+# Vanessa Make Studio - Website
 
-## Descrição
+![Logo Vanessa Make Studio](./public/imgs/logo.webp)
 
-Mail Sender é uma aplicação backend desenvolvida em **TypeScript** usando **Express.js**. A aplicação oferece funcionalidades para envio de e-mails através de endpoints específicos. Ela funciona como template para envio de e-mails em outros futuros projetos.
+## 📋 Sobre o Projeto
 
-## Estrutura do Projeto
+Este é um projeto de extensão universitária "Dev Solidário UniCV" que consiste no desenvolvimento de um site estático para apresentação dos serviços prestados pela cliente Vanessa (maquiadora profissional). O tema do website gira em torno de serviços de beleza, apresentando os trabalhos realizados pela profissional, além de informações de contato e outros serviços oferecidos.
 
-```
-├── .env
-├── .gitignore
-├── api/
-│   ├── index.ts
-│   └── routes/
-│       ├── index.ts
-│       └── send-mail.ts
-├── bun.lockb
-├── docker-compose.yml
-├── Dockerfile
-├── example.http
-├── nginx.conf
-├── package.json
-├── tsconfig.json
-└── vercel.json
-```
+## 🎨 Design do Projeto
 
-### Descrição dos Arquivos e Pastas
+O design completo do projeto pode ser acessado através do Figma:
 
-- **example.http**
-  
-  Contém exemplos de requisições HTTP para testar a API.
-  No Visual Studio Code, instale a extensão "REST Client".
+[Figma - Vanessa Make Studio](https://www.figma.com/design/52Pc7Kb9jnFyhV3mCG1rZ9/Vanessa-Make-Studio?node-id=0-1&t=GyphnjWIKiYDUiYK-1)
 
-  ```http
-  ### POST Request: TEXT
-  POST http://localhost:3000/send-mail
-  content-type: application/json
+## 💻 Tecnologias Utilizadas
 
-  {
-    "to": "guilhermebrogio.ps@gmail.com",
-    "from": "guilhermebrogio.ps@gmail.com",
-    "subject": "Teste",
-    "text": "Teste"
-  }
+- HTML5
+- CSS3
+- JavaScript
+- Otimização de imagens (WebP)
+- SEO básico com meta tags e schema.org
 
-  ### POST Request: HTML
-  POST http://localhost:3000/send-mail
-  content-type: application/json
+## 🏗️ Estrutura do Website
 
-  {
-    "to": "guilhermebrogio.ps@gmail.com",
-    "from": "guilhermebrogio.ps@gmail.com",
-    "subject": "Teste",
-    "html": "<h1>Teste</h1>"
-  }
-  ```
+O website está localizado na pasta `public/` e contém:
 
-## Uso
+- **Hero**: Apresentação da marca e chamada para ação
+- **Sobre Mim**: Informações sobre a profissional Vanessa
+- **Serviços**: Detalhamento dos serviços de maquiagem oferecidos
+- **Contato**: Formulário de contato e informações para agendamentos
 
-### Produção
+## ✨ Características Principais
 
-Para construir e iniciar o servidor em modo de produção:
+- **Design Responsivo**: Adaptável a dispositivos móveis e desktop
+- **Performance Otimizada**:
+  - Carregamento rápido com imagens otimizadas
+  - Fontes estáticas pré-carregadas
+- **Acessibilidade**:
+  - Elementos semânticos HTML5
+  - Textos alternativos para imagens
+- **SEO Otimizado**:
+  - Meta tags apropriadas
+  - Schema.org para Rich Results
+  - Canonical links
 
-```sh
-npm run build
-npm start
+## 🚀 Como Visualizar o Projeto
+
+1 - Clone o repositório:
+
+```bash
+git clone [url-do-repositorio]
 ```
 
-## Endpoints da API
+2 - Acesse a pasta do projeto:
 
-### Enviar E-mail
+```bash
+cd vanessa-makestudios
+```
 
-- **URL:** `/send-mail`
-- **Método:** `POST`
-- **Headers:** `Content-Type: application/json`
-- **Body:**
+3 - Abra o arquivo index.html no navegador:
 
-  - **Texto:**
+```bash
+# Opção 1: Duplo clique no arquivo
+public/index.html
 
-    ```json
-    {
-      "to": "destinatario@example.com",
-      "from": "remetente@example.com",
-      "subject": "Assunto",
-      "text": "Corpo do e-mail em texto"
-    }
-    ```
+# Opção 2: Usando o terminal (Linux/macOS)
+open public/index.html
+```
 
-  - **HTML:**
+## 📝 Requisitos do Projeto (Original)
 
-    ```json
-    {
-      "to": "destinatario@example.com",
-      "from": "remetente@example.com",
-      "subject": "Assunto",
-      "html": "<h1>Corpo do e-mail em HTML</h1>"
-    }
-    ```
+### Objetivo
 
-## Tecnologias Utilizadas
+Desenvolver uma página web estática para um micro ou pequeno negócio que ainda não possua (ou possua pouca) presença online. Este projeto tem como objetivo ajudar esses empreendimentos a ganharem visibilidade e atrair novos clientes através da internet.
 
-- **Node.js & Express.js:** Framework para construção da API.
-- **TypeScript:** Superset de JavaScript para tipagem estática.
-- **Nodemailer:** Envio de e-mails.
-- **Zod:** Validação de schemas.
-- **Docker & Docker Compose:** Containerização e orquestração de containers.
-- **Nginx:** Proxy reverso e balanceamento de carga.
-- **Redis:** Armazenamento de cache ou sessões.
-- **Vercel:** Plataforma de implantação.
+### Requisitos Atendidos
 
-## Links Úteis
+1. **Planejamento e Pesquisa**:
+   - Identificação do negócio (Vanessa Make Studio)
+   - Entrevista com a proprietária para entender necessidades
+   - Coleta de informações e materiais visuais
 
-- [Documentação do Express](https://expressjs.com/)
-- [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
-- [Documentação do Nodemailer](https://nodemailer.com/about/)
-- [Documentação do Zod](https://zod.dev/)
+2. **Design e Estrutura da Página**:
+   - Estrutura completa e intuitiva
+   - Layout responsivo criado no Figma
+   - Implementação com HTML5, CSS3 e Javascript
+   - Práticas de usabilidade e acessibilidade
+
+3. **Conteúdo**:
+   - Textos desenvolvidos com base nas informações do negócio
+   - Imagens de alta qualidade e otimizadas
+   - Organização clara e navegação facilitada
+
+## 👥 Grupo de Desenvolvimento
+
+Alunos do curso de Engenharia de Software da UniCV 3º período A (ESW3A):
+
+- Antônio
+- Lucas Gabriel
+- Guilherme
+- Vinícius
+- Matheus Guilherme
+
+---
+Desenvolvido como projeto de extensão da UniCV - 2023
